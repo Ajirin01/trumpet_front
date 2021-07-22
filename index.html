@@ -10,11 +10,34 @@
 	<link rel="stylesheet" media="all" href="css/style.css">
 	<link rel="stylesheet" href="css/common-style.css">
     <link rel="stylesheet" href="css/responsive.css">
+	<!-- <link href="assets/css/documentation.css" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="public/css/animate.css"> -->
 	
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<style>
+		.blink{
+			opacity: 1;
+			animation-name: blink;
+			animation-direction: 2s;
+			transition: .5s;
+		}
+		@keyframes blink {
+			0%{
+				opacity: 0;
+			}
+			50%{
+				opacity: .5;
+			}
+			100%{
+				opacity: 1;
+			}
+			0%{
+				opacity: 0;
+			}
+		}
+	</style>
 </head>
 <body>
 
@@ -49,7 +72,7 @@
 			<li>
 				<div class="container">
 					<div class="info"><br>
-						<h2>At TSA</h2> 
+						<h2>At TSA</h2> <br> 
                       <marquee> <h2><span>We Mould lives Into Christ Likeness </span></h2></marquee>
 
 					</div>
@@ -57,41 +80,52 @@
 				<!-- / content -->
 			</li>
 			<li>
-				<!--<div class="container">
-					<div class="info">
+				<div class="container">
+					<div class="info"><br>
 						<h2>It’s Time to <br><span>Get back to school</span></h2>
 						<a href="#">Check out our new programs</a>
 					</div>
 				</div>
-				<!-- / content -->
+				 <!-- / content -->
 			</li>
 			<li>
-				<!--<div class="container">
-					<div class="info">
+				<div class="container">
+					<div class="info"><br>
 						<h2>It’s Time to <br><span>Get back to school</span></h2>
 						<a href="#">Check out our new programs</a>
 					</div>
 				</div>
-				<!-- / content -->
+				 <!-- / content -->
 			</li>
 		</ul>
 		<div class="bg-bottom"></div>
         </div>
 		<div class="divider"></div>
 	</div>
+
+	<div class="container">
+		<div class="col-12 text-left">
+			<h1 style="font-family:Verdana, Geneva, sans-serif; text-align:center"><span>WELCOME TO TRUMPET SOUND ACADEMY </span></h1><br>
     
-   <h1 style="font-family:Verdana, Geneva, sans-serif; text-align:center"><span>WELCOME TO TRUMPET SOUND ACADEMY </span></h1><br>
+			<p> Trumpet Sound Academy (TSA) is the first and foremost school in Minna, Niger State that uses mainly the Accelerated Christian Education (ACE)
+				 School of Tomorrow curriculum and inculcates the Nigerian curriculum to bridge all gap topics and subjects. 
+				 This makes the school unique, as its approach is not conventional.  
+				 It places emphasis on learning rather than teaching and a great deal is done to recognize and motivate individual pupils.
+				  Very close co-operation with parents is encouraged and expected, hence, much responsibility for the training and education of 
+				  children is placed on the School as well as with the parents.</p><br>
+		
+		</div>
+	</div>
     
-    <p> Trumpet Sound Academy (TSA) is the first and foremost school in Minna, Niger State that uses mainly the Accelerated Christian Education (ACE) School of Tomorrow curriculum and inculcates the Nigerian curriculum to bridge all gap topics and subjects. This makes the school unique, as its approach is not conventional.  It places emphasis on learning rather than teaching and a great deal is done to recognize and motivate individual pupils. Very close co-operation with parents is encouraged and expected, hence, much responsibility for the training and education of children is placed on the School as well as with the parents.</p><br>
 	
 	<section class="posts">
 		<div class="container">
-			<article>
-				<div class="pic"><img width="121" src="images/2.png" alt=""></div>
+			<article class="color-tests">
+				<div class="pic color-test rgb-to-hex-shorthand"><img width="121" src="images/2.png" alt=""></div>
                 
                 
 				<div class="info">
-					<h3>VISION</h3>
+					<h3 class="blink">VISION</h3>
 					<p>To be the number one Christian School
 						That seeks to make
 						Consecrated Hearts,
@@ -101,7 +135,7 @@
  					</p>
 				</div>
 			</article>
-			<article>
+			<article class="color-tests">
 				<div class="pic"><img width="121" src="images/3.png" alt=""></div>
 				<div class="info">
 					<h3>MISSION</h3>
