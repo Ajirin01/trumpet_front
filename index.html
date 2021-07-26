@@ -20,7 +20,7 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body id="body" style="overflow-y: hidden;">
 	<header id="header">
 		<div class="container">
 			<a href="index.html" id="logo" title="TrumpetSoundAcademy">TrumpetSoundAcademy</a>
@@ -52,7 +52,7 @@
 					<li>
 						<div class="container">
 							<div class="info"><br>
-								<h2>At TSA</h2> 
+								<h2 id="tsa" style="cursor: pointer">TSA</h2> 
 								<marquee style="margin-top: -6%"> <h2><span>We Mould lives Into Christ Likeness </span></h2></marquee>
 								<a href="#">Admission! Enrol Online Now</a>
 							</div>
@@ -62,7 +62,7 @@
 					<li>
 						<div class="container">
 							<div class="info"><br>
-								<h2>At TSA</h2> 
+								<h2>TSA</h2> 
 								<marquee style="margin-top: -6%"> <h2><span>We Mould lives Into Christ Likeness </span></h2></marquee>
 								<a href="#">Admission! Enrol Online Now</a>
 							</div>
@@ -72,7 +72,7 @@
 					<li>
 						<div class="container">
 							<div class="info"><br>
-								<h2>At TSA</h2> 
+								<h2>TSA</h2> 
 								<marquee style="margin-top: -6%"> <h2><span>We Mould lives Into Christ Likeness </span></h2></marquee>
 								<a href="#">Admission! Enrol Online Now</a>
 							</div>
@@ -89,6 +89,48 @@
 							
 							<div class="col-12 col-md-6 col-lg-8">
 								<div class="row">
+									<!-- ##### Hero Area Start ##### -->
+									<div class="col-md-8">
+										<div class="hero-area">
+											<div class="container">
+												<div class="row align-items-center">
+													<div class="col-12 col-lg-8">
+														<!-- Breaking News Widget -->
+														<div class="breaking-news-area d-flex align-items-top">
+															<div class="news-title yellow-rect-box">
+																<p class="yellow-rect-box">Latest Update</p>
+															</div>
+															<div id="breakingNewsTicker" class="ticker">
+																<ul>
+																	<li style="height: 250px !important"><a href="{{URL::to('articles/'.$latest['article_type'].'/'.$latest['id'])}}"><h2 style="transform: scale(.7)">Admission!!! Apply for the ongoing admission online or download form</h2></a></li>
+																	<li style="height: 250px !important"><a href="{{URL::to('articles/'.$latest['article_type'].'/'.$latest['id'])}}"><h2 style="transform: scale(.7)">Vacancy!!! Appply for the current positions</h2></a></li>
+																	<li style="height: 250px !important"><a href="{{URL::to('articles/'.$latest['article_type'].'/'.$latest['id'])}}"><h2 style="transform: scale(.7)">Examination!!! Our Examination is commencing next week</h2></a></li>
+																	
+																</ul>
+															</div>
+														</div>
+								
+														<!-- Breaking News Widget -->
+														<!-- <div class="breaking-news-area d-flex align-items-center mt-15">
+															<div class="news-title title2 yellow-rect-box">
+																<p class="yellow-rect-box">Popular Update</p>
+															</div>
+															<div id="internationalTicker" class="ticker">
+																<ul>
+																	@foreach ($random_articles as $random)
+																		<li><a href="{{URL::to('articles/'.$random['article_type'].'/'.$random['id'])}}">{{$random['article_title']}}</a></li>
+																	@endforeach
+																</ul>
+															</div>
+														</div> -->
+													</div>
+													
+													
+												</div>
+											</div>
+										</div>
+									</div>
+										<!-- ##### Hero Area End ##### -->
 									<div class="col-md-12">
 										<div class="right-top-nav">
 											<div class="container">
@@ -403,8 +445,16 @@
 
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script>window.jQuery || document.write("<script src='js/jquery-1.11.1.min.js'>\x3C/script>")</script>
+	<script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/active.js"></script>
 	<script>
 		/*var toggle_btn = document.getElementById('toggle-btn')
 		var more_container = document.getElementById('more-container')
@@ -516,6 +566,10 @@
 					$('#elips4').show();
 					toggle4 = 0
 				}
+			})
+
+			$('#tsa').on('click', function(){
+				document.getElementById('body').style.overflowY = "scroll"
 			})
 		})
 	</script>

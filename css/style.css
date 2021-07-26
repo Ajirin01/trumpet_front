@@ -3370,8 +3370,8 @@ textarea:focus {
   background-color: #2b4167 !important;
 }
 .yellow-rect-box{
-  background-color: rgb(255, 230, 0) !important;
-  color: #2b4167 !important;
+  background-color: red !important;
+  color: white !important;
 }
 
 .site-btn{
