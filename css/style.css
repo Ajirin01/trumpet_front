@@ -950,13 +950,14 @@ a.btn.blue,
 	/* background: #2b4167 url(../images/ico_information.png) no-repeat 35px 35px; */
 	background-color:#2b4167;
 	display: block;
-	padding: 0 0 0 45px;
+	padding: 0 0 0 22px;
 	margin: 0 15px 100px 15px;
-	height: 134px;
+	height: 125px;
 	border-radius: 20px;
 	/* height: 250px; */
 	color: white;
 	overflow: hidden;
+	text-align: center;
 }
 .info-request:hover {
 	text-decoration: none;
@@ -1393,7 +1394,7 @@ a.btn.blue,
 #vacancy h2 {
 	font-size: 48px;
 	line-height: 48px;
-	padding-bottom: 33px;
+	/* padding-bottom: 20px; */
 }
 
 #vacancy .left {
@@ -1466,6 +1467,7 @@ a.btn.blue,
 	height: 52px;
 	line-height: 52px;
 }
+
 
 .crf-s {
 	outline: none;
@@ -3457,3 +3459,17 @@ cursor: pointer;
       float: right;
       margin-bottom: 4%;
     }} 
+
+	.adimission-requirements{
+		line-height: 2;
+	}
+
+	.adimission-requirements li{
+		list-style: disc;
+	}
+#breakingNewsTicker ul{
+	list-style: decimal !important;
+}
+#breakingNewsTicker ul li a{
+	height: auto
+}
